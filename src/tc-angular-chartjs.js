@@ -89,7 +89,7 @@
 
             if ( value ) {
               if ( chartObj ) {
-                chartObj.destroy();
+                chartObj = {};
               }
               if ( chartType ) {
                 chartObj = chart[ cleanChartName( chartType ) ]( $scope.data, $scope.options );
